@@ -17,7 +17,8 @@ main (int argc, char *argv[])
 {
   GtkWidget *location;
   GtkWidget *locationEmp;
- // GtkWidget *ajouterloc;
+  GtkWidget *emp;
+  GtkWidget *client;
 
 #ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -39,8 +40,11 @@ main (int argc, char *argv[])
   gtk_widget_show (location);
   locationEmp = create_locationEmp ();
   gtk_widget_show (locationEmp);
- // ajouterloc = create_ajouterloc ();
- // gtk_widget_show (ajouterloc);
+  emp = create_Emp ();
+  gtk_widget_show (emp);
+  client = create_menuclientloc ();
+  gtk_widget_show (client);
+
 
   gtk_main ();
   return 0;

@@ -12,7 +12,7 @@ location_SOURCES = \
 	support.c support.h \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
-        ajouter.c ajouter.h 
+        ajouter.c ajouter.h  
 
 location_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 
